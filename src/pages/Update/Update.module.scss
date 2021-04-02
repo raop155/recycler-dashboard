@@ -1,0 +1,27 @@
+@import 'styles/mediaquery';
+
+.component {
+  height: 100%;
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    form {
+      // columns: 2;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1rem;
+      // flex-direction: column;
+
+      > div {
+        margin: 0;
+      }
+
+      @include md {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  }
+}

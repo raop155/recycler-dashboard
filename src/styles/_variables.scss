@@ -1,0 +1,35 @@
+$colors: (
+    "primary": #514f50,
+    "secondary": #C3996C,
+    "tertiary": #00A3DA,
+    "gray":#f7f7f7,
+    "white": #FFF,
+    "black": #292b2c,
+    "success":#5cb85c,
+    "warning":#f0ad4e,
+    "danger":#d9534f,
+);
+
+$sizes: (
+  "xxs": 0.25rem,
+  "xs": 0.5rem,
+  "sm": 0.75rem,
+  "md": 1rem,
+  "lg": 1.25rem,
+  "xl": 1.5rem,
+  "xxl": 1.75rem
+);
+
+:root {
+  @each $key, $value in $colors {
+    --#{$key}-lightest: #{lighten($value, 10%)};
+    --#{$key}-light: #{lighten($value, 5%)};
+    --#{$key}: #{$value};
+    --#{$key}-dark: #{darken($value, 5%)};
+    --#{$key}-darkest: #{darken($value, 10%)};
+  }
+
+  @each $key, $value in $sizes {
+    --#{$key}: #{$value};
+  }
+}

@@ -1,0 +1,38 @@
+.component {
+  margin-bottom: 7.5rem;
+
+  table {
+    text-align: center;
+    border: 1px solid var(--primary);
+  }
+
+  th, td {
+    border: 1px solid var(--secondary);
+    padding: var(--xs);
+
+    button {
+      margin: auto;
+    }
+  }
+
+  th {
+    text-transform: uppercase;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  form {
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+
+    button {
+      width: 100%;
+    }
+  }
+}

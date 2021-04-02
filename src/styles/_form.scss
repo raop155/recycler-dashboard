@@ -1,0 +1,5 @@
+.form {
+  &__field + &__field {
+    margin-top: .5rem
+  }
+}

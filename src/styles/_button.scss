@@ -1,0 +1,101 @@
+.button {
+  display: block;
+  padding: 0.5em 0.75em;
+  background: var(--gray);
+  border: 1px solid var(--gray);
+  color: var(--black);
+  font-size: var(--md);
+  font-family: inherit;
+
+  &:focus {
+    outline: 2px solid var(--black);
+    outline-offset: -1px;
+  }  
+
+  &:hover, &:focus{
+    background: var(--gray-dark);
+  }
+  &:active {
+    background: var(--gray-darkest);
+  }
+
+  &.primary {
+    background: var(--primary);
+    border: 1px solid var(--primary);
+    color: var(--white);
+
+    &:hover, &:focus{
+      background: var(--primary-dark);
+    }
+    &:active {
+      background: var(--primary-darkest);
+    }
+  }
+
+  &.secondary {
+    background: var(--secondary);
+    border: 1px solid var(--secondary);
+    color: var(--white);
+
+    &:hover, &:focus{
+      background: var(--secondary-dark);
+    }
+    &:active {
+      background: var(--secondary-darkest);
+    }
+  }
+
+  &.tertiary {
+    background: var(--tertiary);
+    border: 1px solid var(--tertiary);
+    color: var(--white);
+
+    &:hover, &:focus{
+      background: var(--tertiary-dark);
+    }
+    &:active {
+      background: var(--tertiary-darkest);
+    }
+  }
+
+  &.success {
+    background: var(--success);
+    border: 1px solid var(--success);
+    color: var(--white);
+
+    &:hover, &:focus{
+      background: var(--success-dark);
+    }
+    &:active {
+      background: var(--success-darkest);
+    }
+  }
+
+  &.warning {
+    background: var(--warning);
+    border: 1px solid var(--warning);
+    color: var(--white);
+
+    &:hover, &:focus{
+      background: var(--warning-dark);
+    }
+    &:active {
+      background: var(--warning-darkest);
+    }
+  }
+
+  &.danger {
+    background: var(--danger);
+    border: 1px solid var(--danger);
+    color: var(--white);
+
+    &:hover, &:focus{
+      background: var(--danger-dark);
+    }
+    &:active {
+      background: var(--danger-darkest);
+    }
+  }
+}
+
+
